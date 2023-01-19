@@ -6,6 +6,9 @@ on:
   push:
     branch:
       - main
+defaults:
+  run:
+    working-directory: my-app
 
 jobs:
   build:
