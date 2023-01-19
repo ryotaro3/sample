@@ -6,13 +6,13 @@ on:
   push:
     branch:
       - main
-defaults:
-  run:
-    working-directory: my-app
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: my-app
 
     strategy:
       matrix:
